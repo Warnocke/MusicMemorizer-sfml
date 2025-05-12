@@ -62,4 +62,13 @@ function draw() {
 }
 
 // Start when images are loaded
-fretboard.onload = () => draw();
+let imagesLoaded = 0;
+function tryStartGame() {
+  imagesLoaded++;
+  if (imagesLoaded === 2) {
+    draw();
+  }
+}
+
+fretboard.onload = tryStartGame;
+dot.onload = tryStartGame;
