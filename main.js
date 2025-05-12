@@ -6,7 +6,7 @@ const fretboard = new Image();
 fretboard.src = "Elements/fretboard.png";
 
 const dot = new Image();
-dot.src = "Elements/dot.png";
+dot.src = "Elements/Dot.png";
 
 let score = 0;
 let totalNotes = 78;
