@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Memorize</title>
+
+  <style>
+    canvas {
+    display: block;
+    margin: 20px auto; /* vertical and horizontal centering */
+    }
+    #note-buttons {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      max-width: 400px;
+      margin: 10px auto;
+    }
+
+    #note-buttons button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="788" height="452"></canvas>
+
+  <div id="note-buttons">
+    <button>A</button><button>A#</button><button>B</button>
+    <button>C</button><button>C#</button><button>D</button>
+    <button>D#</button><button>E</button><button>F</button>
+    <button>F#</button><button>G</button><button>G#</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
